@@ -1,0 +1,22 @@
+1. Install WSL
+   - Run CMD as administrator
+   - Type wsl.exe --install
+   - After installation, open Windows Features and find and check:
+     - Virtual Machine Platform
+     - Windows Subsystem for Linux
+   - Restart your computer
+
+2. Install Ubuntu
+   - Run CMD as administrator
+   - Type wsl --install -d Ubuntu
+   - Setup username and password if prompted
+   - Restart computer if required
+
+3. Install libimobiledevice
+   - Run CMD as administrator
+   - Type wsl
+   - Type sudo apt update
+   - Type sudo apt install libimobiledevice-utils libimobiledevice6 usbmuxd libplist-utils
+   - Type wsl idevice_id -l
+   - If the message ERROR: Unable to retrieve device list! appears. The installation is complete.
+
