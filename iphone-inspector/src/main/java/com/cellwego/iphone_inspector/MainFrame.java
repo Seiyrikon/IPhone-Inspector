@@ -11,25 +11,44 @@ import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
 
-import com.cellwego.iphone_inspector.setup.EnvironmentSetup;
+import com.cellwego.iphone_inspector.device.DeviceDetector;
+import com.cellwego.iphone_inspector.inspector.Inspector;
+
+import printer.ZebraPrinterService;
 
 /**
  * @author Seiyrikon
  *
  */
 public class MainFrame extends JFrame {
+//public class MainFrame{
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextArea logArea;
+    private static JTextArea logArea;
 	private JProgressBar progressBar;
 	
-
+	private static Inspector inspector = new Inspector();
+	private static DeviceDetector detector = new DeviceDetector();
+	
+	private static ZebraPrinterService zebraPrinter = new ZebraPrinterService();
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		MainFrame ui = new MainFrame();
+//		MainFrame ui = new MainFrame();
+//		detector.detect();
+//		inspector.runCommand("ideviceinfo.exe");
+		String zpl = "^XA^FO50,50^ADN,36,20^FDHello ZT411^FS^XZ";
+		try {
+			zebraPrinter.connect();
+//			zebraPrinter.printLabel(zpl);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("This works");
+			e.printStackTrace();
+		}
+		
 	}
 
 	/**
@@ -54,7 +73,7 @@ public class MainFrame extends JFrame {
         setVisible(true);
 	}
 	
-	public void log(String message) {
+	public static void log(String message) {
 		SwingUtilities.invokeLater(() -> logArea.append(message + "\n"));
 	}
 

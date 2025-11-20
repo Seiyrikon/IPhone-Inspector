@@ -49,5 +49,119 @@
 	    <artifactId>dotenv-java</artifactId>
 	    <version>3.0.0</version>
 	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>zebra-sdk</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>commons-codec</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>commons-lang3</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>commons-net</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>commons-validator</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>httpclient5</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>httpcore5</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>jackson-annotations</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>jackson-annotations</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>jackson-core</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>libusb4arm</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>libusb4darwin</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>libusb4</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>opencsv</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>snmp6</artifactId>
+	    <version>1.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.zebra</groupId>
+	    <artifactId>usb4java</artifactId>
+	    <version>1.0</version>
+	</dependency>
   </dependencies>
 </project>
