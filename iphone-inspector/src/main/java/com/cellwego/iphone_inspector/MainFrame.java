@@ -20,8 +20,8 @@ import printer.ZebraPrinterService;
  * @author Seiyrikon
  *
  */
-public class MainFrame extends JFrame {
-//public class MainFrame{
+// public class MainFrame extends JFrame {
+public class MainFrame{
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -54,24 +54,24 @@ public class MainFrame extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public MainFrame() {
-		setTitle("CellWeGo IPhone Inspector");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(10,10));
-		setContentPane(contentPane);
+	// public MainFrame() {
+	// 	setTitle("CellWeGo IPhone Inspector");
+	// 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	// 	setBounds(100, 100, 450, 300);
+	// 	contentPane = new JPanel();
+	// 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+	// 	contentPane.setLayout(new BorderLayout(10,10));
+	// 	setContentPane(contentPane);
 		
-		logArea = new JTextArea();
-		logArea.setEditable(false);
-		contentPane.add(new JScrollPane(logArea), BorderLayout.CENTER);
+	// 	logArea = new JTextArea();
+	// 	logArea.setEditable(false);
+	// 	contentPane.add(new JScrollPane(logArea), BorderLayout.CENTER);
 		
-		progressBar = new JProgressBar();
-		progressBar.setIndeterminate(true);
-		contentPane.add(progressBar, BorderLayout.SOUTH);
-        setVisible(true);
-	}
+	// 	progressBar = new JProgressBar();
+	// 	progressBar.setIndeterminate(true);
+	// 	contentPane.add(progressBar, BorderLayout.SOUTH);
+    //     setVisible(true);
+	// }
 	
 	public static void log(String message) {
 		SwingUtilities.invokeLater(() -> logArea.append(message + "\n"));
