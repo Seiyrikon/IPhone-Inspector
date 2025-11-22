@@ -39,10 +39,11 @@ public class MainFrame{
 //		MainFrame ui = new MainFrame();
 //		detector.detect();
 //		inspector.runCommand("ideviceinfo.exe");
-		String zpl = "^XA^FO50,50^ADN,36,20^FDHello ZT411^FS^XZ";
+
+		String zpl = "^XA^LH0,0^FO20,20^ADN,36,20^FDHello from Java!^FS^XZ";
+
 		try {
-			zebraPrinter.connect();
-//			zebraPrinter.printLabel(zpl);
+			zebraPrinter.printLabel(zpl);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("This works");

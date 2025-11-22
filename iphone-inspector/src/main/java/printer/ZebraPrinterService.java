@@ -25,7 +25,12 @@ public class ZebraPrinterService {
 	
     public void printLabel(String zpl) throws Exception {
         ZebraPrinter printer = connect();
-        printer.getConnection().write(zpl.getBytes());
+        // printer.getConnection().write(zpl.getBytes());
+		printer.sendCommand("^XA^XZ");
+		Thread.sleep(200);
+
+		// Print the real label
+		printer.sendCommand(zpl);
         printer.getConnection().close();
     }
 }

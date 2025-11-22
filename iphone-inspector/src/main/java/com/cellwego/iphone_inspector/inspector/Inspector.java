@@ -9,8 +9,6 @@ import java.util.List;
 
 import com.cellwego.iphone_inspector.MainFrame;
 
-import extractor.NativeExtractor;
-import logger.Logger;
 
 public class Inspector {
 	

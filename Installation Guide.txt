@@ -1,22 +1,18 @@
-1. Install WSL
-   - Run CMD as administrator
-   - Type wsl.exe --install
-   - After installation, open Windows Features and find and check:
-     - Virtual Machine Platform
-     - Windows Subsystem for Linux
-   - Restart your computer
-
-2. Install Ubuntu
-   - Run CMD as administrator
-   - Type wsl --install -d Ubuntu
-   - Setup username and password if prompted
-   - Restart computer if required
-
-3. Install libimobiledevice
-   - Run CMD as administrator
-   - Type wsl
-   - Type sudo apt update
-   - Type sudo apt install libimobiledevice-utils libimobiledevice6 usbmuxd libplist-utils
-   - Type wsl idevice_id -l
-   - If the message ERROR: Unable to retrieve device list! appears. The installation is complete.
+1. Download and install iTunes
+   - Look inside installers folder
+2. Install Maven 
+   - Look for apache-maven-3.9.11-bin inside installers folder
+   - Extract the folder
+   - Put the bin folder path into environment variables > system variables > path > edit
+   - Confirm if maven is working properly. Run cmd, type mvn --version, if no errors occured, the installation is finished.
+3. Install libimobiledevice 
+   - Look for libimobiledevice.1.2.1-r1122-win-x64 inside installers folder
+   - Put the folder path into environment variables > system variables > path > edit
+   - Confirm if libimobiledevice is working properly. Run cmd, type ideviceinfo.exe, if ERROR: No device found! appears, the installation is finished.
+4. Install Zebra SDK
+   - Look for zddriver-v1062628275-certified inside intallers folder
+   - Run the .exe file and complete the installation.
+5. Install all the jar files inside lib folder.
+   - mvn install:install-file -Dfile="[PROJECT LOCATION]\lib\ZSDK_API.jar" -DgroupId=com.zebra -DartifactId=zebra-sdk -Dversion=1.0 -Dpackaging=jar
+   - mvn install:install-file -Dfile=lib/ZSDK_API.jar -DgroupId=com.zebra -DartifactId=zebra-api -Dversion=1.0 -Dpackaging=jar
 
