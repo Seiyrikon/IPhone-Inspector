@@ -13,8 +13,8 @@ import javax.swing.border.EmptyBorder;
 
 import com.cellwego.iphone_inspector.device.DeviceDetector;
 import com.cellwego.iphone_inspector.inspector.Inspector;
+import com.cellwego.iphone_inspector.printer.ZebraPrinterService;
 
-import printer.ZebraPrinterService;
 
 /**
  * @author Seiyrikon
@@ -46,7 +46,6 @@ public class MainFrame{
 			zebraPrinter.printLabel(zpl);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println("This works");
 			e.printStackTrace();
 		}
 		

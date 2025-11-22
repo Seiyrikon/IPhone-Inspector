@@ -1,4 +1,4 @@
-package printer;
+package com.cellwego.iphone_inspector.printer;
 
 import com.zebra.sdk.printer.*;
 import com.zebra.sdk.printer.discovery.*;
